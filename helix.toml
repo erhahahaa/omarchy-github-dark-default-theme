@@ -1,0 +1,151 @@
+# GitHub Dark Default — Helix
+# Syntax colors follow GitHub's own highlighting (Primer): keywords red, functions
+# purple, strings light blue, constants blue, comments gray.
+
+# Syntax
+"keyword" = "keyword"
+"keyword.control" = { fg = "keyword", modifiers = ["italic"] }
+"function" = "func"
+"function.builtin" = "constant"
+"function.macro" = "func"
+"type" = "type_name"
+"type.builtin" = "constant"
+"type.enum.variant" = "constant"
+"constructor" = "type_name"
+"constant" = "constant"
+"constant.builtin" = "constant"
+"constant.numeric" = "constant"
+"constant.character" = "string"
+"constant.character.escape" = "constant"
+"string" = "string"
+"string.regexp" = "string"
+"string.special" = "constant"
+"comment" = { fg = "comment", modifiers = ["italic"] }
+"variable" = "foreground"
+"variable.parameter" = { fg = "type_name", modifiers = ["italic"] }
+"variable.builtin" = "constant"
+"variable.other.member" = "constant"
+"label" = "constant"
+"punctuation" = "foreground"
+"punctuation.special" = "keyword"
+"operator" = "keyword"
+"tag" = "tag"
+"namespace" = { fg = "type_name", modifiers = ["italic"] }
+"special" = "func"
+"attribute" = "constant"
+
+# Markup
+"markup.heading.1" = { fg = "constant", modifiers = ["bold"] }
+"markup.heading.2" = { fg = "constant", modifiers = ["bold"] }
+"markup.heading.3" = { fg = "constant", modifiers = ["bold"] }
+"markup.heading.4" = { fg = "constant", modifiers = ["bold"] }
+"markup.heading.5" = { fg = "constant", modifiers = ["bold"] }
+"markup.heading.6" = { fg = "constant", modifiers = ["bold"] }
+"markup.list" = "keyword"
+"markup.list.unchecked" = "comment"
+"markup.list.checked" = "color2"
+"markup.bold" = { fg = "foreground", modifiers = ["bold"] }
+"markup.italic" = { fg = "foreground", modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link.url" = { fg = "accent", modifiers = ["underlined"] }
+"markup.link.text" = "constant"
+"markup.link.label" = "accent"
+"markup.raw" = "string"
+"markup.quote" = "comment"
+
+# Diff
+"diff.plus" = "color2"
+"diff.minus" = "color1"
+"diff.delta" = "color3"
+
+# Leave the editor background transparent so the terminal background shows through
+"ui.background" = { }
+
+"ui.linenr" = { fg = "muted" }
+"ui.linenr.selected" = { fg = "foreground" }
+
+# Statusline uses an inverted band (background-color text on foreground-color
+# background) to guarantee contrast across both light and dark Omarchy themes.
+"ui.statusline" = { fg = "background", bg = "foreground" }
+"ui.statusline.inactive" = { fg = "background", bg = "muted" }
+"ui.statusline.normal" = { fg = "background", bg = "color4", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "background", bg = "color2", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "background", bg = "color5", modifiers = ["bold"] }
+
+"ui.popup" = { fg = "foreground", bg = "lighter_background" }
+"ui.window" = { fg = "border" }
+"ui.help" = { fg = "foreground", bg = "lighter_background" }
+
+"ui.bufferline" = { fg = "muted", bg = "background" }
+"ui.bufferline.active" = { fg = "foreground", bg = "background", underline = { color = "accent", style = "line" } }
+
+"ui.text" = "foreground"
+"ui.text.focus" = { fg = "foreground", bg = "lighter_background", modifiers = ["bold"] }
+"ui.text.inactive" = { fg = "muted" }
+"ui.text.directory" = { fg = "accent" }
+
+"ui.virtual" = "muted"
+"ui.virtual.ruler" = { bg = "lighter_background" }
+"ui.virtual.indent-guide" = "border"
+"ui.virtual.inlay-hint" = { fg = "muted" }
+"ui.virtual.jump-label" = { fg = "color1", modifiers = ["bold"] }
+"ui.virtual.whitespace" = "border"
+
+"ui.selection" = { bg = "selection_background", fg = "selection_foreground" }
+
+"ui.cursor" = { fg = "background", bg = "cursor" }
+"ui.cursor.primary" = { fg = "background", bg = "cursor" }
+"ui.cursor.match" = { fg = "color3", modifiers = ["bold"] }
+"ui.cursor.primary.normal" = { fg = "background", bg = "cursor" }
+"ui.cursor.primary.insert" = { fg = "background", bg = "color2" }
+"ui.cursor.primary.select" = { fg = "background", bg = "color5" }
+
+"ui.cursorline.primary" = { bg = "lighter_background" }
+
+"ui.highlight" = { bg = "lighter_background", modifiers = ["bold"] }
+
+"ui.menu" = { fg = "foreground", bg = "lighter_background" }
+"ui.menu.selected" = { fg = "foreground", bg = "selection_background", modifiers = ["bold"] }
+
+"diagnostic.error" = { underline = { color = "color1", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "color3", style = "curl" } }
+"diagnostic.info" = { underline = { color = "color4", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "color6", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+error = "color1"
+warning = "color3"
+info = "color4"
+hint = "color6"
+
+[palette]
+background = "#0d1117"
+foreground = "#e6edf3"
+lighter_background = "#161b22"
+border = "#30363d"
+muted = "#6e7681"
+accent = "#4493f8"
+cursor = "#2f81f7"
+selection_background = "#1e4273"
+selection_foreground = "#ffffff"
+
+# GitHub syntax roles
+keyword = "#ff7b72"
+func = "#d2a8ff"
+string = "#a5d6ff"
+constant = "#79c0ff"
+type_name = "#ffa657"
+tag = "#7ee787"
+comment = "#8b949e"
+
+# ANSI
+color0 = "#484f58"
+color1 = "#ff7b72"
+color2 = "#3fb950"
+color3 = "#d29922"
+color4 = "#58a6ff"
+color5 = "#bc8cff"
+color6 = "#39c5cf"
+color7 = "#b1bac4"
+color8 = "#6e7681"

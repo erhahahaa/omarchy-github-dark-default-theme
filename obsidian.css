@@ -1,0 +1,114 @@
+/* GitHub Dark Default for Obsidian (Omarchy theme) */
+
+.theme-dark, .theme-light {
+  /* Core surfaces: canvas.default, canvas.subtle, canvas.inset */
+  --background-primary: #0d1117;
+  --background-primary-alt: #161b22;
+  --background-secondary: #161b22;
+  --background-secondary-alt: #010409;
+  --text-normal: #e6edf3;
+
+  /* Selection colors */
+  --text-selection: #1e4273;
+
+  /* Border color: border.default */
+  --background-modifier-border: #30363d;
+
+  /* GitHub renders markdown headings in the default text color */
+  --text-title-h1: #e6edf3;
+  --text-title-h2: #e6edf3;
+  --text-title-h3: #e6edf3;
+  --text-title-h4: #e6edf3;
+  --text-title-h5: #e6edf3;
+  --text-title-h6: #7d8590;
+
+  /* Links and accents */
+  --text-link: #4493f8;
+  --text-accent: #4493f8;
+  --text-accent-hover: #79c0ff;
+  --interactive-accent: #1f6feb;
+  --interactive-accent-hover: #388bfd;
+
+  /* Muted text: fg.muted / fg.subtle */
+  --text-muted: #7d8590;
+  --text-faint: #6e7681;
+
+  /* Code */
+  --code-normal: #e6edf3;
+
+  /* Errors and success */
+  --text-error: #f85149;
+  --text-error-hover: #ff7b72;
+  --text-success: #3fb950;
+
+  /* Tags */
+  --tag-color: #79c0ff;
+  --tag-background: rgba(56, 139, 253, 0.15);
+
+  /* Graph */
+  --graph-line: #30363d;
+  --graph-node: #8b949e;
+  --graph-node-focused: #4493f8;
+  --graph-node-tag: #79c0ff;
+  --graph-node-attachment: #3fb950;
+}
+
+/* Headers */
+.cm-header-1, .markdown-rendered h1 { color: var(--text-title-h1); }
+.cm-header-2, .markdown-rendered h2 { color: var(--text-title-h2); }
+.cm-header-3, .markdown-rendered h3 { color: var(--text-title-h3); }
+.cm-header-4, .markdown-rendered h4 { color: var(--text-title-h4); }
+.cm-header-5, .markdown-rendered h5 { color: var(--text-title-h5); }
+.cm-header-6, .markdown-rendered h6 { color: var(--text-title-h6); }
+
+/* GitHub underlines top-level headings */
+.markdown-rendered h1,
+.markdown-rendered h2 {
+  border-bottom: 1px solid #30363d;
+  padding-bottom: 0.3em;
+}
+
+/* Inline code and code blocks */
+.markdown-rendered code {
+  color: #e6edf3;
+  background-color: rgba(110, 118, 129, 0.4);
+}
+
+.markdown-rendered pre {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+}
+
+/* Syntax highlighting (GitHub's own roles) */
+.cm-s-obsidian span.cm-keyword { color: #ff7b72; }
+.cm-s-obsidian span.cm-string { color: #a5d6ff; }
+.cm-s-obsidian span.cm-number { color: #79c0ff; }
+.cm-s-obsidian span.cm-comment { color: #8b949e; }
+.cm-s-obsidian span.cm-operator { color: #ff7b72; }
+.cm-s-obsidian span.cm-def { color: #d2a8ff; }
+
+/* Links */
+.markdown-rendered a {
+  color: var(--text-link);
+}
+
+/* Blockquotes */
+.markdown-rendered blockquote {
+  border-left-color: #30363d;
+  color: #7d8590;
+}
+
+/* Active elements */
+.workspace-leaf.mod-active .workspace-leaf-header-title {
+  color: var(--text-normal);
+}
+
+.nav-file-title.is-active {
+  color: var(--text-normal);
+  background-color: rgba(110, 118, 129, 0.4);
+}
+
+/* Search results */
+.search-result-file-title {
+  color: var(--text-link);
+}
