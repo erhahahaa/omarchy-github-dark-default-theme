@@ -40,10 +40,8 @@ bright_magenta = "#d2a8ff"
 hyprland_active_border = "rgba(4493f8ee) rgba(a371f7ee) 45deg"
 hyprland_inactive_border = "rgba(30363daa)"
 
-# Alias used by the Foot terminal template
-purple = "#bc8cff"
-
-# Explicit ANSI palette so terminals match GitHub's own dark default exactly
+# Explicit ANSI palette. Omarchy derives color0 from background and color7 from
+# foreground, so the exact GitHub terminal endpoints live in extras/ instead.
 color0 = "#484f58"
 color1 = "#ff7b72"
 color2 = "#3fb950"
@@ -60,9 +58,3 @@ color12 = "#79c0ff"
 color13 = "#d2a8ff"
 color14 = "#56d4dd"
 color15 = "#f0f6fc"
-
-# Pre-Quattro (Omarchy 3) keys. Quattro derives these from the palette above and
-# ignores extras, so they only make the file usable on older releases too.
-cursor = "#ffffff"
-selection_foreground = "#ffffff"
-selection_background = "#1e4273"
